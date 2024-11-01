@@ -1,0 +1,77 @@
+/* src/Auth.css */
+.bodyAuth{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #5c5959;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+
+.App{
+  background-color: #0056b303;
+}
+
+.auth-container {
+  background: rgba(255, 255, 255, 0.8); /* Transparent white */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 40px; /* Padding */
+  width: 100%;
+  max-width: 400px; /* Max width */
+  text-align: center; /* Center align text */
+  margin-top: 5%;
+  height: 500px;
+}
+
+.auth-title {
+  font-size: 2em; /* Title font size */
+  margin-bottom: 20px; /* Space below title */
+  color: #333; /* Title color */
+}
+
+.auth-input {
+  width: calc(100% - 20px); /* Full width minus padding */
+  padding: 10px; /* Padding */
+  margin: 10px 0; /* Margin */
+  border: 1px solid #ccc; /* Border color */
+  border-radius: 4px; /* Rounded corners */
+  outline: none; /* Remove outline */
+  transition: border-color 0.3s; /* Smooth transition */
+}
+
+.auth-input:focus {
+  border-color: #007bff; /* Border color on focus */
+}
+
+.auth-button {
+  width: 100%;
+  padding: 12px; /* Padding */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor */
+  background-color: #007bff; /* Background color */
+  color: white; /* Text color */
+  font-size: 1em; /* Font size */
+  margin-top: 20px; /* Space above button */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+.auth-button:hover {
+  background-color: #0056b3; /* Hover background color */
+  transform: scale(1.05); /* Slight scale on hover */
+}
+
+.error-message {
+  color: #ff6b6b; /* Error message color */
+  background: rgba(255, 255, 255, 0.2); /* Error message background */
+  padding: 10px; /* Padding */
+  border-radius: 5px; /* Rounded corners */
+  margin-bottom: 10px; /* Margin below message */
+}
