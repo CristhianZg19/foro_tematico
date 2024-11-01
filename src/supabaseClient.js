@@ -16,7 +16,7 @@ export const supabase = createClient(supabaseUrl, supabaseAnonKey);
 // Realiza una consulta de prueba para confirmar la conexión
 const testConnection = async () => {
     try {
-        const { data, error } = await supabase.from('posts').select('*').limit(1); // Puedes reemplazar 'test_table' por una tabla real en tu base de datos
+        const { error } = await supabase.from('posts').select('*').limit(1); // Puedes reemplazar 'test_table' por una tabla real en tu base de datos
         if (error) {
             console.error("Error al conectar con Supabase:", error.message);
         } else {
